@@ -101,8 +101,8 @@ function renderWork(w) {
       </div>
     </article>
     ${W.length > 1 ? `<nav class="pn" aria-label="آثار دیگر">
-      <a href="#${hashOf(prev)}"><img src="${esc(coverOf(prev))}" alt=""><span><small>اثر قبلی</small><b>${esc(label(prev))}</b></span></a>
-      <a class="nx" href="#${hashOf(next)}"><img src="${esc(coverOf(next))}" alt=""><span><small>اثر بعدی</small><b>${esc(label(next))}</b></span></a>
+      <a href="#${hashOf(prev)}"><img src="${esc(coverOf(prev))}" alt=""><span><small>اثر قبلی</small><b>اثر ${fa(prev.id)}</b></span></a>
+      <a class="nx" href="#${hashOf(next)}"><img src="${esc(coverOf(next))}" alt=""><span><small>اثر بعدی</small><b>اثر ${fa(next.id)}</b></span></a>
     </nav>` : ''}
     <div class="all"><a class="btn ghosty" href="#">${ICON.grid.replace('<svg', '<svg width="18" height="18"')}دیدن همه‌ی آثار</a></div>
   </div>${footer()}`;

@@ -25,7 +25,7 @@ window.SITE = {
 window.WORKS = [
   {
     id: "01",
-    name: "",
+    name: "محمد حسین احمدی",
     cover: "media/w01-thumb.jpg",
     ar: "9/16",
     videos: [
@@ -39,7 +39,7 @@ window.WORKS = [
   },
   {
     id: "02",
-    name: "",
+    name: "محمد حسین احمدی",
     cover: "media/w02-thumb.jpg",
     ar: "9/16",
     videos: [
@@ -53,7 +53,7 @@ window.WORKS = [
   },
   {
     id: "03",
-    name: "",
+    name: "محمد حسین احمدی",
     cover: "media/w03-thumb.jpg",
     ar: "9/16",
     videos: [
@@ -71,7 +71,7 @@ window.WORKS = [
   },
   {
     id: "04",
-    name: "",
+    name: "محمد حسین احمدی",
     cover: "media/w04-thumb.jpg",
     ar: "9/16",
     videos: [
@@ -89,7 +89,7 @@ window.WORKS = [
   },
   {
     id: "05",
-    name: "",
+    name: "محمد حسین احمدی",
     cover: "media/w05-thumb.jpg",
     ar: "9/16",
     videos: [
@@ -107,7 +107,7 @@ window.WORKS = [
   },
   {
     id: "06",
-    name: "",
+    name: "بهار اسماعیلی",
     cover: "media/w06-thumb.jpg",
     ar: "16/9",
     videos: [
@@ -117,7 +117,7 @@ window.WORKS = [
   },
   {
     id: "07",
-    name: "",
+    name: "یاسمین فریدزادگان",
     cover: "media/w07-thumb.jpg",
     ar: "720/1562",
     videos: [
