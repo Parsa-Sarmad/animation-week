@@ -102,7 +102,7 @@ function bar(extra = '') {
 
 function media(w) {
   if (w.embed) return `<div class="view embed"><iframe src="${esc(w.embed)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(w.title)}"></iframe></div>`;
-  if (w.video) return `<div class="view"><video src="${esc(w.video)}" poster="${esc(coverOf(w))}" controls playsinline preload="metadata"></video></div>`;
+  if (w.video) return `<div class="view"><video src="${esc(w.video)}#t=0.1"${w.poster ? ` poster="${esc(w.poster)}"` : ''} controls playsinline preload="metadata"></video></div>`;
   const imgs = (w.images && w.images.length ? w.images : [coverOf(w)]).filter(Boolean);
   if (imgs.length < 2) return `<div class="view"><img src="${esc(imgs[0] || '')}" alt="${esc(w.title)}"></div>`;
   return `<div class="view gal"><div class="slides" tabindex="0" aria-label="گالری ${esc(w.title)}">${imgs.map((s, i) => `<img src="${esc(s)}" alt="${esc(w.title)} — ${fa(i + 1)}" ${i ? 'loading="lazy"' : ''}>`).join('')}</div>
