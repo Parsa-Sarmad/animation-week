@@ -128,7 +128,7 @@ window.WORKS = [
   },
   {
     id: "08",
-    name: "",
+    name: "یاسمین فریدزادگان",
     cover: "media/w08-thumb.jpg",
     ar: "9/16",
     videos: [
