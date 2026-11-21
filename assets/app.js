@@ -72,7 +72,7 @@ function bar() {
 
 function one(m, w, i, lazy) {
   if (m.type === 'image') return `<img src="${esc(m.src)}" alt="${esc(label(w))} — ${fa(i + 1)}" ${lazy ? 'loading="lazy"' : ''}>`;
-  return `<video src="${esc(m.src)}${m.poster ? '' : '#t=0.1'}"${m.poster ? ` poster="${esc(m.poster)}"` : ''} controls playsinline preload="${lazy ? 'none' : 'metadata'}"></video>`;
+  return `<video src="${esc(m.src)}${m.poster ? '' : '#t=0.1'}"${m.poster ? ` poster="${esc(m.poster)}"` : ''} controls controlslist="nodownload" playsinline preload="${lazy ? 'none' : 'metadata'}"></video>`;
 }
 
 function media(w) {
@@ -141,6 +141,7 @@ function route() {
   renderHome();
 }
 
+document.addEventListener('contextmenu', e => { if (e.target.closest && e.target.closest('video, .view')) e.preventDefault(); });
 window.addEventListener('hashchange', route);
 route();
 }

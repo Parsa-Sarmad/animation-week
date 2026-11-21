@@ -22,6 +22,7 @@ LAYOUT  poster header with dates and venues, Instagram-style 3-up grid; work pag
 html{scroll-padding-top:72px;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--wall);color:var(--ink);font:16px/1.75 Vazirmatn,Tahoma,"Segoe UI",sans-serif;overflow-x:clip}
 img,video{display:block;max-width:100%}
+video{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 a{color:inherit}
 button,input{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--crimson);outline-offset:3px;border-radius:4px}
