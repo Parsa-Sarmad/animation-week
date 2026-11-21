@@ -1,1 +1,3 @@
-سایت نمایشگاه — Animation Week · انیمیشن و معماری
+# Moved
+
+This site has moved to https://animationweek.github.io/
